@@ -3,7 +3,7 @@
 
 // color palette - these colors will be the color swatches of the Colors section
 
-@import 'partial/_color'; 
+@import 'partials/_color';
 
 // fonts
 
@@ -12,9 +12,9 @@ $secondary-font: 'Open Sans', sans-serif;
 $group2-font1: 'Original Surfer', cursive;
 $group2-font2: 'Raleway', sans-serif;
 
-/* -------------------------------- 
+/* --------------------------------
 
-xBackground 
+xBackground
 
 -------------------------------- */
 
@@ -23,7 +23,7 @@ body {
 	background-color: $color-5;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 xPatterns
 
@@ -38,13 +38,13 @@ xPatterns
 	padding: 6px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xNavigation 
+xNavigation
 
 -------------------------------- */
 
-@import 'partial/_navigation'; 
+@import 'partials/_navigation';
 
 header {
 	background-color: $color-2;
@@ -126,9 +126,9 @@ header {
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xPage title 
+xPage title
 
 -------------------------------- */
 
@@ -141,17 +141,17 @@ main > h1 {
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xTypography 
+xTypography
 
 -------------------------------- */
 
-@import 'partials/_typography'; 
+@import 'partials/_typography';
 
-/* -------------------------------- 
+/* --------------------------------
 
-xButtons 
+xButtons
 
 -------------------------------- */
 
@@ -209,13 +209,13 @@ xButtons
 }
 
 .cd-buttons .cd-box:nth-of-type(2) span {
-	/* CSS class name color */ 
+	/* CSS class name color */
 	color: $color-1;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xIcons 
+xIcons
 
 -------------------------------- */
 
@@ -235,9 +235,9 @@ button:hover {
 	background-color: RoyalBlue;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xForm 
+xForm
 
 -------------------------------- */
 
