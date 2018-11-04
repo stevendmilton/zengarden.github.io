@@ -90,6 +90,79 @@ abbr {
   grid-template-columns: repeat(8, auto);
   grid-template-rows: repeat(50, auto); }
 
+.intro {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(5, auto);
+  background-color: #EDFAFD; }
+
+@media screen and (max-width: 767.5px) {
+  #zen-intro header {
+    grid-column-start: 1;
+    grid-column-end: span 8;
+    border: 3px solid purple;
+    border-radius: 10px; }
+
+  header h1 {
+    grid-column: span 1/8;
+    border: 3px solid purple;
+    border-radius: 10px; }
+
+  header h2 {
+    grid-column: span 1/8;
+    border: 3px solid purple;
+    border-radius: 10px; }
+
+  #zen-summary {
+    grid-row-start: 3;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: span 6;
+    border: 3px solid purple;
+    border-radius: 10px;
+    text-align: center; } }
+@media screen and (min-width: 768px) {
+  /* specific divs */
+  #zen-intro header {
+    grid-column-start: 1;
+    grid-column-end: span 8;
+    border: 3px solid purple;
+    border-radius: 10px; }
+
+  header h1 {
+    height: 3em;
+    width: 30%;
+    margin: 5% 5% 0% 15%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid purple;
+    border-radius: 10px; }
+
+  header h2 {
+    height: 3em;
+    width: 30%;
+    margin: 0% 5% 5% 30%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid purple;
+    border-radius: 10px; }
+
+  #zen-summary {
+    grid-row-start: 3;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: span 6;
+    border: 3px solid purple;
+    border-radius: 10px;
+    text-align: center; } }
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(50, auto); }
+
 @media screen and (min-width: 768px) {
   /* specific divs */
   #zen-preamble {
