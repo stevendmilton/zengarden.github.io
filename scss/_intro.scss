@@ -1,19 +1,14 @@
 //Grid for top section*/
-.main {
- height: 100%;
- display: grid;
- grid-template-columns: repeat(8, auto);
- grid-template-rows: repeat(50, auto);
-}
+
 .intro{
 	height: 100%;
 	display: grid;
-	grid-template-columns: repeat(8, auto);
+	grid-template-columns: repeat($maxcol, auto);
 	grid-template-rows: repeat(5, auto);
 	background-color: #EDFAFD;
 }
 //code for mobile
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: $M) {
   #zen-intro header {
    grid-column-start: 1;
    grid-column-end: span 8;
@@ -43,7 +38,7 @@
 
 
 //Code for larger screens
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $M) {
   /* specific divs */
   #zen-intro header {
    grid-column-start: 1;

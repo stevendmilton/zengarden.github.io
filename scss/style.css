@@ -1,3 +1,8 @@
+/* ---------------------------------
+
+Variables
+
+----------------------------------- */
 /* --------------------------------
 
 xBackground
@@ -84,12 +89,6 @@ a:hover, a:focus, a:active {
 abbr {
   border-bottom: none; }
 
-.main {
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(8, auto);
-  grid-template-rows: repeat(50, auto); }
-
 .intro {
   height: 100%;
   display: grid;
@@ -97,7 +96,7 @@ abbr {
   grid-template-rows: repeat(5, auto);
   background-color: #EDFAFD; }
 
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 768px) {
   #zen-intro header {
     grid-column-start: 1;
     grid-column-end: span 8;
@@ -214,7 +213,7 @@ abbr {
     border-radius: 10px;
     padding: 10px;
     margin: 5px; } }
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 768px) {
   #zen-intro header {
     grid-row-start: 1;
     grid-row-end: 1;
@@ -297,9 +296,16 @@ abbr {
   margin-left: 25px; }
 
 footer {
-  position: absolute;
+  grid-row-start: 60;
+  grid-row-end: span 8;
+  grid-column: 1;
+  grid-column-end: span 8;
+  border: 3px solid green;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
   bottom: 0;
-  width: 100%;
+  width: 97.5%;
   height: 70px;
   text-align: center;
   line-height: 70px; }
