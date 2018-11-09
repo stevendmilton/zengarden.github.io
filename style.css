@@ -298,15 +298,25 @@ abbr {
     grid-column-end: span 8;
     margin: auto;
     width: 80%;
-    background-color: #135589; }
+    padding: 10px; }
 
   #zen-preamble h3 {
     text-align: center;
     background-color: #135589;
-    margin: auto; }
+    color: #aed9da;
+    margin: 5% 15% 5% 15%; }
 
-  #zen-preamble:nth-child(2) {
-    background-color: aqua; }
+  .preamble p:nth-child(2) {
+    background-color: #2a93d5;
+    padding: 0px 20px 0px 20px; }
+
+  .preamble p:nth-child(3) {
+    background-color: #2a93d5;
+    padding: 0px 20px 0px 20px; }
+
+  .preamble p:nth-child(4) {
+    background-color: #2a93d5;
+    padding: 0px 20px 0px 20px; }
 
   #zen-explanation {
     grid-row-start: 4;
