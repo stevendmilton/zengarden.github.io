@@ -8,6 +8,7 @@ Variables
 xBackground
 
 -------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Original+Surfer|Raleway");
 body {
   /* this is the page background */
   background-color: none; }
@@ -23,34 +24,87 @@ xTypography
 
 -------------------------------- */
 h1, h2 {
-  font-family: 'Original Surfer', cursive;
-  color: black; }
+  font-family: "Original Surfer", cursive; }
 
 h1 {
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 1.2;
-  margin: 0 0 .4em; }
+  margin: 0 0 .4em;
+  color: #135589; }
 
 h2 {
   font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0; }
+  margin: 1em 0;
+  color: #ff6435; }
 
 h3 {
-  font: italic normal 1.4em surfer, sans-serif;
+  font-family: "Original Surfer", cursive;
+  font-size: 2em;
   letter-spacing: 1px;
   margin-bottom: 0;
-  color: #7D775C; }
+  color: #135589; }
+
+h2 abbr {
+  font-family: "Original Surfer", cursive;
+  color: #ff6435;
+  font-size: 3rem; }
+
+abbr {
+  text-decoration: none; }
 
 p {
   font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   line-height: 1.4; }
 
-a {
-  color: cadetblue;
-  text-decoration: underline; }
+.summary {
+  color: #135589; }
+
+.summary > p > a:link {
+  text-transform: uppercase; }
+
+div > p > a:link {
+  color: #135589; }
+
+div > p > a:hover {
+  color: #2a93d5;
+  text-decoration: none; }
+
+.preamble {
+  color: #3ddad7; }
+  .preamble h3 {
+    color: #3ddad7; }
+
+.explanation, .participation, .benefits, .requirements {
+  color: #135589; }
+
+footer a:link {
+  color: #135589;
+  font-size: 2rem; }
+footer a:hover {
+  color: #2a93d5;
+  text-decoration: none; }
+footer a:visited {
+  color: #ff6435;
+  text-decoration: none; }
+
+aside {
+  color: #3ddad7; }
+  aside h3 {
+    color: #3ddad7; }
+  aside li {
+    list-style: none; }
+
+ul a:link {
+  color: #3ddad7; }
+ul a:hover {
+  color: #2a93d5;
+  text-decoration: none; }
+ul a:visited {
+  color: #ff6435;
+  text-decoration: none; }
 
 /* --------------------------------
 
