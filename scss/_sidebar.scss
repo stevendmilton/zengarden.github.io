@@ -1,0 +1,38 @@
+.sidebar {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+}
+
+.wrapper {
+  grid-column: 1 / 9;
+  grid-row: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-evenly;
+  width: 98.5%;
+  height: 100%;
+  margin: 0 auto;
+  border: 3px solid blue;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.select, .archives, .resources {
+  margin-left: 35px; }
+
+
+
+/* media query for mobile phone */
+@media only screen and (max-width: 768px) {
+  .sidebar, .wrapper {
+    width: 100%; 
+  }
+  
+.wrapper {
+    display: block;
+    text-align: center; }
+
+  .design-selection, .design-archives, .zen-resources {
+    padding-right: 30px; } }
