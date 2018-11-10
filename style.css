@@ -82,12 +82,15 @@ div > p > a:hover {
 
 footer a:link {
   color: #135589;
-  font-size: 2rem; }
+  font-size: 1rem;
+  background-color: #ff6435;
+  border-radius: 10px;
+  padding: 5px; }
 footer a:hover {
   color: #2a93d5;
   text-decoration: none; }
 footer a:visited {
-  color: #ff6435;
+  color: #3ddad7;
   text-decoration: none; }
 
 aside {
@@ -222,16 +225,35 @@ abbr {
 @media screen and (min-width: 768px) {
   /* specific divs */
   #zen-preamble {
-    grid-row-start: 3;
+    grid-row: 3;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px; }
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px; }
+
+  #zen-preamble h3 {
+    text-align: left;
+    background-color: #135589;
+    color: #edfafd;
+    margin: 20px 15% 0% 15%; }
+
+  .preamble p:nth-child(2) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
+
+  .preamble p:nth-child(3) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
+
+  .preamble p:nth-child(4) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
 
   #zen-explanation {
-    grid-row-start: 4;
-    grid-row-end: span 10;
+    grid-row: 4 / span 10;
     grid-column: 1;
     grid-column-end: span 2;
     border: 3px solid green;
@@ -270,15 +292,15 @@ abbr {
     margin: 5px; }
 
   footer {
-    grid-row-start: 19;
-    grid-row-end: span 8;
-    grid-column: 1;
-    grid-column-end: span 8;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    grid-row: 19;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
-    margin: 5px;
-    width: 97.5%; } }
+    margin: 5px; } }
 @media screen and (max-width: 768px) {
   #zen-intro header {
     grid-row: 1;
@@ -292,63 +314,141 @@ abbr {
     grid-row: 3;
     grid-column: 1 / span 8;
     margin: auto;
-    width: 80%;
-    padding: 10px; }
+    width: 100%;
+    padding: 20px 10px 0px 10px; }
 
   #zen-preamble h3 {
     text-align: center;
     background-color: #135589;
     color: #edfafd;
-    margin: 5% 15% 5% 15%; }
+    margin: 20px 15% 0% 15%; }
 
   .preamble p:nth-child(2) {
     background-color: #2a93d5;
-    padding: 0px 20px 0px 20px; }
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
 
   .preamble p:nth-child(3) {
     background-color: #2a93d5;
-    padding: 0px 20px 0px 20px; }
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
 
   .preamble p:nth-child(4) {
     background-color: #2a93d5;
-    padding: 0px 20px 0px 20px; }
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
 
   #zen-explanation {
     grid-row: 4;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px; }
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px; }
+
+  .explanation h3 {
+    text-align: center;
+    background-color: #135589;
+    color: #edfafd;
+    margin: 20px 15% 0% 15%; }
+
+  .explanation p:nth-child(2) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
+
+  .explanation p:nth-child(3) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
 
   #zen-participation {
     grid-row: 5;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px; }
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px; }
+
+  .participation h3 {
+    text-align: center;
+    background-color: #135589;
+    color: #edfafd;
+    margin: 20px 15% 0% 15%; }
+
+  .participation p:nth-child(2) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
+
+  .participation p:nth-child(3) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
+
+  .participation p:nth-child(4) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
 
   #zen-requirements {
     grid-row: 6;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px; }
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px; }
+
+  .requirements h3 {
+    text-align: center;
+    background-color: #135589;
+    color: #edfafd;
+    margin: 20px 15% 0% 15%; }
+
+  .requirements p:nth-child(2) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
+
+  .requirements p:nth-child(3) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
+
+  .requirements p:nth-child(4) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
+
+  .requirements p:nth-child(5) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
+
+  .requirements p:nth-child(6) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
 
   #zen-benefits {
     grid-row: 7;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px; }
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 20px 10px; }
+
+  .benefits h3 {
+    text-align: center;
+    background-color: #135589;
+    color: #edfafd;
+    margin: 20px 15% 0% 15%; }
+
+  .benefits p:nth-child(2) {
+    background-color: #2a93d5;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%; }
 
   footer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     grid-row: 8;
     grid-column: 1 / span 8;
     border: 3px solid green;

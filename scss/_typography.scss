@@ -85,15 +85,18 @@ div>p>a:hover{
 //footer style
 footer{
     a:link{
-         color: $color-5;
-        font-size: 2rem;
+        color: $color-5;
+        font-size: 1rem;
+        background-color: $color-6;
+        border-radius: 10px;
+        padding: 5px;
     }
     a:hover{
         color: $color-4;
         text-decoration:  none;
     }
     a:visited{
-        color: $color-6;
+        color: $color-3;
         text-decoration:  none;
     }
 }

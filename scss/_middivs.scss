@@ -12,16 +12,36 @@
 @media screen and (min-width: $M) {
 /* specific divs */
   #zen-preamble {
-    grid-row-start: 3;
+    grid-row: 3;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px;
   }
+  #zen-preamble h3 {
+    text-align: left;
+    background-color: $color-5;
+    color: $color-1;
+    margin: 20px 15% 0% 15%;
+  }
+  .preamble p:nth-child(2) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .preamble p:nth-child(3) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .preamble p:nth-child(4) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+
   #zen-explanation {
-    grid-row-start: 4;
-    grid-row-end: span 10;
+    grid-row: 4 / span 10;
     grid-column: 1;
     grid-column-end: span 2;
     border: 3px solid green;
@@ -60,15 +80,15 @@
     margin: 5px;
   }
   footer {
-    grid-row-start: 19;
-    grid-row-end: span 8;
-    grid-column: 1;
-    grid-column-end: span 8;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    grid-row: 19;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
-    width: 97.5%;
   }
 }
 @media screen and (max-width: $M) {
@@ -86,63 +106,141 @@
     grid-row: 3;
     grid-column: 1 / span 8;
     margin: auto;
-    width: 80%;
-    padding: 10px;
+    width: 100%;
+    padding: 20px 10px 0px 10px;
   }
   #zen-preamble h3 {
     text-align: center;
     background-color: $color-5;
     color: $color-1;
-    margin: 5% 15% 5% 15%;
+    margin: 20px 15% 0% 15%;
   }
   .preamble p:nth-child(2) {
     background-color: $color-4;
-    padding: 0px 20px 0px 20px;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
   }
   .preamble p:nth-child(3) {
     background-color: $color-4;
-    padding: 0px 20px 0px 20px;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
   }
   .preamble p:nth-child(4) {
     background-color: $color-4;
-    padding: 0px 20px 0px 20px;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
   }
   #zen-explanation {
     grid-row: 4;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+  }
+  .explanation h3 {
+    text-align: center;
+    background-color: $color-5;
+    color: $color-1;
+    margin: 20px 15% 0% 15%;
+  }
+  .explanation p:nth-child(2) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .explanation p:nth-child(3) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
   }
   #zen-participation {
     grid-row: 5;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+  }
+  .participation h3 {
+    text-align: center;
+    background-color: $color-5;
+    color: $color-1;
+    margin: 20px 15% 0% 15%;
+  }
+  .participation p:nth-child(2) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .participation p:nth-child(3) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .participation p:nth-child(4) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
   }
   #zen-requirements {
     grid-row: 6;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+  }
+  .requirements h3 {
+    text-align: center;
+    background-color: $color-5;
+    color: $color-1;
+    margin: 20px 15% 0% 15%;
+  }
+  .requirements p:nth-child(2) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .requirements p:nth-child(3) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .requirements p:nth-child(4) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .requirements p:nth-child(5) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .requirements p:nth-child(6) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
   }
   #zen-benefits {
     grid-row: 7;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+  }
+  .benefits h3 {
+    text-align: center;
+    background-color: $color-5;
+    color: $color-1;
+    margin: 20px 15% 0% 15%;
+  }
+  .benefits p:nth-child(2) {
+    background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
   }
   footer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     grid-row: 8;
     grid-column: 1 / span 8;
     border: 3px solid green;
