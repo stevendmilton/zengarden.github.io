@@ -27,9 +27,9 @@
 /* media query for mobile phone */
 @media only screen and (max-width: 768px) {
   .sidebar, .wrapper {
-    width: 100%; 
+    margin-right: 5px;
   }
-  
+
 .wrapper {
     display: block;
     text-align: center; }

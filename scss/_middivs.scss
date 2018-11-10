@@ -1,17 +1,19 @@
+.page-wrapper {
+  background-image: linear-gradient(to bottom, $color-3, $color-1);
+}
+
 .main {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat($maxcol, auto);
-  grid-template-rows: repeat($maxrow, auto);
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(8, auto);
 }
 
 @media screen and (min-width: $M) {
 /* specific divs */
   #zen-preamble {
     grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: span 8;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
@@ -58,7 +60,7 @@
     margin: 5px;
   }
   footer {
-    grid-row-start: 60;
+    grid-row-start: 19;
     grid-row-end: span 8;
     grid-column: 1;
     grid-column-end: span 8;
@@ -71,24 +73,18 @@
 }
 @media screen and (max-width: $M) {
   #zen-intro header {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: span 8;
+    grid-row: 1;
+    grid-column: 1 / span 8;
   }
 
   #zen-summary {
     grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: span 8;
+    grid-column: 1 / span 8;
   }
 
   #zen-preamble {
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: span 8;
+    grid-row: 3;
+    grid-column: 1 / span 8;
     margin: auto;
     width: 80%;
     padding: 10px;
@@ -96,7 +92,7 @@
   #zen-preamble h3 {
     text-align: center;
     background-color: $color-5;
-    color: $color-2;
+    color: $color-1;
     margin: 5% 15% 5% 15%;
   }
   .preamble p:nth-child(2) {
@@ -112,55 +108,47 @@
     padding: 0px 20px 0px 20px;
   }
   #zen-explanation {
-    grid-row-start: 4;
-    grid-row-end: 4;
-    grid-column: 1;
-    grid-column-end: span 8;
+    grid-row: 4;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
   }
   #zen-participation {
-    grid-row-start: 5;
-    grid-row-end: 5;
-    grid-column: 1;
-    grid-column-end: span 8;
+    grid-row: 5;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
   }
   #zen-requirements {
-    grid-row-start: 6;
-    grid-row-end: 6;
-    grid-column: 1;
-    grid-column-end: span 8;
+    grid-row: 6;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
   }
   #zen-benefits {
-    grid-row-start: 7;
-    grid-row-end: 7;
-    grid-column: 1;
-    grid-column-end: span 8;
+    grid-row: 7;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
   }
   footer {
-    grid-row-start: 60;
-    grid-row-end: span 8;
-    grid-column: 1;
-    grid-column-end: span 8;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    grid-row: 8;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
-    width: 97.5%;
   }
 }
 

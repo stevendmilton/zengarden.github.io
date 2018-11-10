@@ -56,8 +56,8 @@ abbr {
 
 p {
   font-family: "Raleway", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.4; }
+  font-size: 1rem;
+  line-height: 1.2; }
 
 .summary {
   color: #135589; }
@@ -210,19 +210,20 @@ abbr {
     border: 3px solid purple;
     border-radius: 10px;
     text-align: center; } }
+.page-wrapper {
+  background-image: linear-gradient(to bottom, #3ddad7, #edfafd); }
+
 .main {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(8, auto);
-  grid-template-rows: repeat(50, auto); }
+  grid-template-rows: repeat(8, auto); }
 
 @media screen and (min-width: 768px) {
   /* specific divs */
   #zen-preamble {
     grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: span 8;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
@@ -269,7 +270,7 @@ abbr {
     margin: 5px; }
 
   footer {
-    grid-row-start: 60;
+    grid-row-start: 19;
     grid-row-end: span 8;
     grid-column: 1;
     grid-column-end: span 8;
@@ -280,22 +281,16 @@ abbr {
     width: 97.5%; } }
 @media screen and (max-width: 768px) {
   #zen-intro header {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: span 8; }
+    grid-row: 1;
+    grid-column: 1 / span 8; }
 
   #zen-summary {
     grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: span 8; }
+    grid-column: 1 / span 8; }
 
   #zen-preamble {
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: span 8;
+    grid-row: 3;
+    grid-column: 1 / span 8;
     margin: auto;
     width: 80%;
     padding: 10px; }
@@ -303,7 +298,7 @@ abbr {
   #zen-preamble h3 {
     text-align: center;
     background-color: #135589;
-    color: #aed9da;
+    color: #edfafd;
     margin: 5% 15% 5% 15%; }
 
   .preamble p:nth-child(2) {
@@ -319,91 +314,75 @@ abbr {
     padding: 0px 20px 0px 20px; }
 
   #zen-explanation {
-    grid-row-start: 4;
-    grid-row-end: 4;
-    grid-column: 1;
-    grid-column-end: span 8;
+    grid-row: 4;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px; }
 
   #zen-participation {
-    grid-row-start: 5;
-    grid-row-end: 5;
-    grid-column: 1;
-    grid-column-end: span 8;
+    grid-row: 5;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px; }
 
   #zen-requirements {
-    grid-row-start: 6;
-    grid-row-end: 6;
-    grid-column: 1;
-    grid-column-end: span 8;
+    grid-row: 6;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px; }
 
   #zen-benefits {
-    grid-row-start: 7;
-    grid-row-end: 7;
-    grid-column: 1;
-    grid-column-end: span 8;
+    grid-row: 7;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 5px; }
 
   footer {
-    grid-row-start: 60;
-    grid-row-end: span 8;
-    grid-column: 1;
-    grid-column-end: span 8;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    grid-row: 8;
+    grid-column: 1 / span 8;
     border: 3px solid green;
     border-radius: 10px;
     padding: 10px;
-    margin: 5px;
-    width: 97.5%; } }
+    margin: 5px; } }
 .sidebar {
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(8, auto);
-  grid-template-rows: repeat(50, auto); }
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%; }
 
 .wrapper {
-  font-family: 'Raleway', sans-serif;
-  grid-column: 1 / span 8;
-  grid-row: 36 / span 50;
+  grid-column: 1 / 9;
+  grid-row: 1 / 4;
   display: grid;
   grid-template-columns: repeat(3, auto);
+  justify-content: space-evenly;
   width: 98.5%;
   height: 100%;
   margin: 0 auto;
-  border: 5px solid blue; }
+  border: 3px solid blue;
+  border-radius: 10px;
+  margin: 5px; }
 
 .select, .archives, .resources {
-  margin-left: 25px; }
-
-footer {
-  bottom: 0;
-  width: 97.5%;
-  height: 70px;
-  text-align: center;
-  line-height: 70px; }
-
-footer a {
-  padding: 80px; }
+  margin-left: 35px; }
 
 /* media query for mobile phone */
 @media only screen and (max-width: 768px) {
-  .sidebar, .wrapper, footer {
-    width: 100%; }
+  .sidebar, .wrapper {
+    margin-right: 5px; }
 
-  .wrapper, footer a {
+  .wrapper {
     display: block;
     text-align: center; }
 
