@@ -227,39 +227,35 @@ abbr {
   #zen-preamble {
     grid-row: 3;
     grid-column: 1 / span 8;
-    margin: auto;
+    margin: 0;
     width: 100%;
-    padding: 20px 10px 0px 10px; }
+    color: #3ddad7;
+    background-color: #2a93d5; }
 
   #zen-preamble h3 {
     text-align: left;
-    background-color: #135589;
-    color: #edfafd;
-    margin: 20px 15% 0% 15%; }
+    padding: 20px 10px 0px 18px; }
 
   .preamble p:nth-child(2) {
-    background-color: #2a93d5;
-    padding: 5px 20px 5px 20px;
-    margin: 0% 5% 0% 5%; }
+    padding: 5px 20px 0px 15px; }
 
   .preamble p:nth-child(3) {
-    background-color: #2a93d5;
-    padding: 5px 20px 5px 20px;
-    margin: 0% 5% 0% 5%; }
+    padding: 5px 20px 0px 15px; }
 
   .preamble p:nth-child(4) {
-    background-color: #2a93d5;
-    padding: 5px 20px 5px 20px;
-    margin: 0% 5% 0% 5%; }
+    padding: 5px 20px 10px 15px; }
 
   #zen-explanation {
     grid-row: 4 / span 10;
     grid-column: 1;
     grid-column-end: span 2;
     border: 3px solid green;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
     margin: 5px; }
+
+  .explanation h3 {
+    text-align: center; }
 
   #zen-participation {
     grid-row-start: 4;
@@ -267,9 +263,12 @@ abbr {
     grid-column: 3;
     grid-column-end: span 2;
     border: 3px solid green;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
     margin: 5px; }
+
+  .participation h3 {
+    text-align: center; }
 
   #zen-requirements {
     grid-row-start: 4;
@@ -277,9 +276,12 @@ abbr {
     grid-column: 6;
     grid-column-end: span 2;
     border: 3px solid green;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
     margin: 5px; }
+
+  .requirements h3 {
+    text-align: center; }
 
   #zen-benefits {
     grid-row-start: 14;
@@ -287,9 +289,12 @@ abbr {
     grid-column: 1;
     grid-column-end: span 2;
     border: 3px solid green;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
     margin: 5px; }
+
+  .benefits h3 {
+    text-align: center; }
 
   footer {
     display: flex;
@@ -302,14 +307,6 @@ abbr {
     padding: 10px;
     margin: 5px; } }
 @media screen and (max-width: 768px) {
-  #zen-intro header {
-    grid-row: 1;
-    grid-column: 1 / span 8; }
-
-  #zen-summary {
-    grid-row-start: 2;
-    grid-column: 1 / span 8; }
-
   #zen-preamble {
     grid-row: 3;
     grid-column: 1 / span 8;
@@ -320,7 +317,7 @@ abbr {
   #zen-preamble h3 {
     text-align: center;
     background-color: #135589;
-    color: #edfafd;
+    color: #aed9da;
     margin: 20px 15% 0% 15%; }
 
   .preamble p:nth-child(2) {
