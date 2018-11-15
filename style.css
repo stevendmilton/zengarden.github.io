@@ -1,28 +1,4 @@
-/* ---------------------------------
-
-Variables
-
------------------------------------ */
-/* --------------------------------
-
-xBackground
-
--------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Original+Surfer|Raleway");
-body {
-  /* this is the page background */
-  background-color: none; }
-
-/* --------------------------------
-
-xNavigation
-
--------------------------------- */
-/* --------------------------------
-
-xTypography
-
--------------------------------- */
 h1, h2 {
   font-family: "Original Surfer", cursive; }
 
@@ -49,7 +25,9 @@ h3 {
 h2 abbr {
   font-family: "Original Surfer", cursive;
   color: #ff6435;
-  font-size: 3rem; }
+  font-size: 3rem;
+  padding-left: .5em;
+  padding-right: .5em; }
 
 abbr {
   text-decoration: none; }
@@ -73,9 +51,9 @@ div > p > a:hover {
   text-decoration: none; }
 
 .preamble {
-  color: #3ddad7; }
+  color: #2a93d5; }
   .preamble h3 {
-    color: #3ddad7; }
+    color: #2a93d5; }
 
 .explanation, .participation, .benefits, .requirements {
   color: #135589; }
@@ -94,26 +72,21 @@ footer a:visited {
   text-decoration: none; }
 
 aside {
-  color: #3ddad7; }
+  color: #135589; }
   aside h3 {
-    color: #3ddad7; }
+    color: #135589; }
   aside li {
     list-style: none; }
 
 ul a:link {
-  color: #3ddad7; }
+  color: #135589; }
 ul a:hover {
-  color: #2a93d5;
-  text-decoration: none; }
-ul a:visited {
   color: #ff6435;
   text-decoration: none; }
+ul a:visited {
+  color: #135589;
+  text-decoration: none; }
 
-/* --------------------------------
-
-xBasic Style
-
--------------------------------- */
 /* basic elements */
 html {
   margin: 0;
@@ -151,40 +124,32 @@ abbr {
   display: grid;
   grid-template-columns: repeat(8, auto);
   grid-template-rows: repeat(5, auto);
-  background-color: #EDFAFD; }
+  background-color: #edfafd; }
 
 @media screen and (max-width: 768px) {
   #zen-intro header {
-    grid-column-start: 1;
-    grid-column-end: span 8;
-    border: 3px solid purple;
-    border-radius: 10px; }
+    grid-column-start: 2;
+    grid-column-end: span 8; }
 
   header h1 {
-    grid-column: span 1/8;
-    border: 3px solid purple;
-    border-radius: 10px; }
+    grid-column-start: 3;
+    grid-column-end: 6; }
 
   header h2 {
     grid-column: span 1/8;
-    border: 3px solid purple;
-    border-radius: 10px; }
+    text-align: middle; }
 
   #zen-summary {
     grid-row-start: 3;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: span 6;
-    border: 3px solid purple;
-    border-radius: 10px;
     text-align: center; } }
 @media screen and (min-width: 768px) {
   /* specific divs */
   #zen-intro header {
     grid-column-start: 1;
-    grid-column-end: span 8;
-    border: 3px solid purple;
-    border-radius: 10px; }
+    grid-column-end: span 8; }
 
   header h1 {
     height: 3em;
@@ -193,30 +158,29 @@ abbr {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid purple;
-    border-radius: 10px; }
+    border-radius: 40px;
+    background-color: #ffffff; }
 
   header h2 {
     height: 3em;
-    width: 30%;
+    width: 60%;
     margin: 0% 5% 5% 30%;
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid purple;
-    border-radius: 10px; }
+    border-radius: 15px;
+    background-color: #3ddad7;
+    background-color: rgba(64, 191, 191, 0.3);
+    text-align: center;
+    vertical-align: middle; }
 
   #zen-summary {
     grid-row-start: 3;
     grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: span 6;
-    border: 3px solid purple;
-    border-radius: 10px;
+    grid-column-start: 4;
+    grid-column-end: span 4;
     text-align: center; } }
-.page-wrapper {
-  background-image: linear-gradient(to bottom, #3ddad7, #edfafd); }
-
 .main {
+  background: linear-gradient(to bottom, #135589 0%, #3ddad7 100%);
   height: 100%;
   display: grid;
   grid-template-columns: repeat(8, auto);
@@ -230,11 +194,12 @@ abbr {
     margin: 0;
     width: 100%;
     color: #3ddad7;
-    background-color: #2a93d5; }
+    background-color: #135589; }
 
   #zen-preamble h3 {
     text-align: left;
-    padding: 20px 10px 0px 18px; }
+    padding: 20px 10px 0px 18px;
+    color: #3ddad7; }
 
   .preamble p:nth-child(2) {
     padding: 5px 20px 0px 15px; }
@@ -249,10 +214,10 @@ abbr {
     grid-row: 4 / span 10;
     grid-column: 1;
     grid-column-end: span 2;
-    border: 3px solid green;
     border-radius: 30px;
     padding: 10px;
-    margin: 5px; }
+    margin: 15px;
+    background-color: rgba(235, 250, 250, 0.5); }
 
   .explanation h3 {
     text-align: center; }
@@ -262,10 +227,10 @@ abbr {
     grid-row-end: span 9;
     grid-column: 3;
     grid-column-end: span 2;
-    border: 3px solid green;
     border-radius: 30px;
     padding: 10px;
-    margin: 5px; }
+    margin: 15px;
+    background-color: rgba(235, 250, 250, 0.5); }
 
   .participation h3 {
     text-align: center; }
@@ -275,10 +240,10 @@ abbr {
     grid-row-end: span 15;
     grid-column: 6;
     grid-column-end: span 2;
-    border: 3px solid green;
     border-radius: 30px;
     padding: 10px;
-    margin: 5px; }
+    margin: 15px;
+    background-color: rgba(235, 250, 250, 0.5); }
 
   .requirements h3 {
     text-align: center; }
@@ -288,10 +253,10 @@ abbr {
     grid-row-end: span 5;
     grid-column: 1;
     grid-column-end: span 2;
-    border: 3px solid green;
     border-radius: 30px;
     padding: 10px;
-    margin: 5px; }
+    margin: 15px;
+    background-color: rgba(235, 250, 250, 0.5); }
 
   .benefits h3 {
     text-align: center; }
@@ -302,36 +267,35 @@ abbr {
     justify-content: space-around;
     grid-row: 19;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
     padding: 10px;
-    margin: 5px; } }
+    margin: 5px 0 0 0;
+    background-color: #B7B089; } }
 @media screen and (max-width: 768px) {
+  .main {
+    background: linear-gradient(to bottom, #135589 0%, #3ddad7 100%); }
+
   #zen-preamble {
     grid-row: 3;
     grid-column: 1 / span 8;
     margin: auto;
     width: 100%;
-    padding: 20px 10px 0px 10px; }
+    padding: 20px 10px 0px 10px;
+    background-color: #135589; }
 
   #zen-preamble h3 {
     text-align: center;
-    background-color: #135589;
-    color: #aed9da;
+    color: #2a93d5;
     margin: 20px 15% 0% 15%; }
 
   .preamble p:nth-child(2) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
   .preamble p:nth-child(3) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
   .preamble p:nth-child(4) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
@@ -340,16 +304,15 @@ abbr {
     grid-column: 1 / span 8;
     margin: auto;
     width: 100%;
-    padding: 20px 10px 0px 10px; }
+    padding: 5em, auto 5em auto;
+    background-color: rgba(255, 255, 255, 0.2); }
 
   .explanation h3 {
     text-align: center;
-    background-color: #135589;
-    color: #edfafd;
+    color: #aed9da;
     margin: 20px 15% 0% 15%; }
 
   .explanation p:nth-child(2) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
@@ -363,13 +326,15 @@ abbr {
     grid-column: 1 / span 8;
     margin: auto;
     width: 100%;
-    padding: 20px 10px 0px 10px; }
+    padding: 20px 10px 0px 10px;
+    background-color: rgba(235, 250, 250, 0.5); }
 
   .participation h3 {
     text-align: center;
     background-color: #135589;
     color: #edfafd;
-    margin: 20px 15% 0% 15%; }
+    margin: 20px 15% 0% 15%;
+    background-color: rgba(235, 250, 250, 0.5); }
 
   .participation p:nth-child(2) {
     background-color: #2a93d5;
@@ -448,10 +413,9 @@ abbr {
     justify-content: space-around;
     grid-row: 8;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
     padding: 10px;
-    margin: 5px; } }
+    margin: 5px 0 0;
+    background-color: #B7B089; } }
 .sidebar {
   display: grid;
   grid-template-columns: repeat(8, auto);
@@ -464,26 +428,24 @@ abbr {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: space-evenly;
-  width: 98.5%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
-  border: 3px solid blue;
-  border-radius: 10px;
-  margin: 5px; }
+  background: linear-gradient(to bottom, #B7B089 0%, #5C5845 100%); }
 
 .select, .archives, .resources {
   margin-left: 35px; }
 
 /* media query for mobile phone */
 @media only screen and (max-width: 768px) {
-  .sidebar, .wrapper {
-    margin-right: 5px; }
-
   .wrapper {
     display: block;
     text-align: center; }
 
   .design-selection, .design-archives, .zen-resources {
     padding-right: 30px; } }
+body {
+  /* this is the page background */
+  background-color: none; }
 
 /*# sourceMappingURL=style.css.map */

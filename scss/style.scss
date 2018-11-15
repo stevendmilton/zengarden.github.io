@@ -1,61 +1,14 @@
-/* ---------------------------------
-
-Variables
-
------------------------------------ */
-
-$maxcol: 8;
-$maxrow: 50;
-
-// breakpoints
-$M:     768px;
-$D:     1024px;
-
-
-// color palette - these colors will be the color swatches of the Colors section
-
 @import '_color';
-
 @import '_prefix-mixins';
-@import '_layout'; // responsive grid and media queries
-
-
-/* --------------------------------
-
-xBackground
-
--------------------------------- */
+@import 'layout'; // responsive grid and media queries
+@import '_navigation';
+@import '_typography';
+@import '_basic-style';
+@import '_intro'; //top section of site
+@import '_middivs'; //middle section of site
+@import '_sidebar';
 
 body {
 	/* this is the page background */
 	background-color: none;
 }
-
-
-/* --------------------------------
-
-xNavigation
-
--------------------------------- */
-
-@import '_navigation';
-
-
-/* --------------------------------
-
-xTypography
-
--------------------------------- */
-
-@import '_typography';
-
-/* --------------------------------
-
-xBasic Style
-
--------------------------------- */
-
-@import '_basic-style';
-@import '_intro';
-@import '_middivs';
-@import '_sidebar'

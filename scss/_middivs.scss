@@ -1,14 +1,19 @@
 .page-wrapper {
-  background-image: linear-gradient(to bottom, $color-3, $color-1);
+  // background-image: linear-gradient(to bottom, $color-3, $color-1);
 }
 
 .main {
+  background: linear-gradient(to bottom, $color-5 0%,$color-3 100%,);
   height: 100%;
   display: grid;
   grid-template-columns: repeat(8, auto);
   grid-template-rows: repeat(8, auto);
 }
 
+
+//
+//Desktop view
+//
 @media screen and (min-width: $M) {
 /* specific divs */
   #zen-preamble {
@@ -17,11 +22,12 @@
     margin: 0;
     width: 100%;
     color: $color-3;
-    background-color: $color-4;
+    background-color: $color-5;
   }
   #zen-preamble h3 {
     text-align: left;
     padding: 20px 10px 0px 18px;
+    color: $color-3;
   }
   .preamble p:nth-child(2) {
     padding: 5px 20px 0px 15px;
@@ -37,10 +43,12 @@
     grid-row: 4 / span 10;
     grid-column: 1;
     grid-column-end: span 2;
-    border: 3px solid green;
+    // border: 3px solid green;
     border-radius: 30px;
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
+    background-color: hsla(180, 60%, 95%, .5);
+
   }
   .explanation h3 {
     text-align: center;
@@ -50,10 +58,11 @@
     grid-row-end: span 9;
     grid-column: 3;
     grid-column-end: span 2;
-    border: 3px solid green;
+    // border: 3px solid green;
     border-radius: 30px;
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
+    background-color: hsla(180, 60%, 95%, .5);
   }
   .participation h3 {
     text-align: center;
@@ -63,10 +72,11 @@
     grid-row-end: span 15;
     grid-column: 6;
     grid-column-end: span 2;
-    border: 3px solid green;
+    // border: 3px solid green;
     border-radius: 30px;
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
+    background-color: hsla(180, 60%, 95%, .5);
   }
   .requirements h3 {
     text-align: center;
@@ -76,10 +86,11 @@
     grid-row-end: span 5;
     grid-column: 1;
     grid-column-end: span 2;
-    border: 3px solid green;
+    // border: 3px solid green;
     border-radius: 30px;
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
+    background-color: hsla(180, 60%, 95%, .5);
   }
   .benefits h3 {
     text-align: center;
@@ -90,38 +101,51 @@
     justify-content: space-around;
     grid-row: 19;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
+    // border: 3px solid green;
     padding: 10px;
-    margin: 5px;
+    margin: 5px 0 0 0;
+    background-color: $color-8;
   }
 }
+
+
+
+
+
+//
+//mobile View
+//
 @media screen and (max-width: $M) {
+  .main {
+    background: linear-gradient(to bottom, $color-5 0%,$color-3 100%,);
+  }
+
   #zen-preamble {
     grid-row: 3;
     grid-column: 1 / span 8;
     margin: auto;
     width: 100%;
     padding: 20px 10px 0px 10px;
+    background-color: $color-5;
   }
   #zen-preamble h3 {
     text-align: center;
-    background-color: $color-5;
-    color: $color-2;
+    // background-color: $color-5;
+    color: $color-4;
     margin: 20px 15% 0% 15%;
   }
   .preamble p:nth-child(2) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
   .preamble p:nth-child(3) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
   .preamble p:nth-child(4) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
@@ -130,16 +154,17 @@
     grid-column: 1 / span 8;
     margin: auto;
     width: 100%;
-    padding: 20px 10px 0px 10px;
+    padding: 5em, auto 5em auto;
+    background-color: hsla(180, 40%, 100%, .2);
   }
   .explanation h3 {
     text-align: center;
-    background-color: $color-5;
-    color: $color-1;
+    // background-color: $color-5;
+    color: $color-2;
     margin: 20px 15% 0% 15%;
   }
   .explanation p:nth-child(2) {
-    background-color: $color-4;
+    // background-color: $color-;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
@@ -154,12 +179,14 @@
     margin: auto;
     width: 100%;
     padding: 20px 10px 0px 10px;
+    background-color: hsla(180, 60%, 95%, .5);
   }
   .participation h3 {
     text-align: center;
     background-color: $color-5;
     color: $color-1;
     margin: 20px 15% 0% 15%;
+    background-color: hsla(180, 60%, 95%, .5);
   }
   .participation p:nth-child(2) {
     background-color: $color-4;
@@ -238,10 +265,10 @@
     justify-content: space-around;
     grid-row: 8;
     grid-column: 1 / span 8;
-    border: 3px solid green;
-    border-radius: 10px;
+    // border: 3px solid green;
+    // border-radius: 10px;
     padding: 10px;
-    margin: 5px;
+    margin: 5px 0 0 ;
+    background-color: $color-8;
   }
 }
-

@@ -5,33 +5,41 @@
 	display: grid;
 	grid-template-columns: repeat($maxcol, auto);
 	grid-template-rows: repeat(5, auto);
-	background-color: #EDFAFD;
+	background-color: $color-1 ;
 }
-//code for mobile
+//
+//code for mobile view
+//
 @media screen and (max-width: $M) {
   #zen-intro header {
-   grid-column-start: 1;
+   grid-column-start: 2;
    grid-column-end: span 8;
-   border: 3px solid purple;
-   border-radius: 10px;
+	 // background-color: $color-2;
+   // border: 3px solid purple;
+   // border-radius: 10px;
   }
   header h1{
-  	grid-column: span 1/8;
-  	border: 3px solid purple;
-  	border-radius: 10px;
+  	grid-column-start: 3;
+		grid-column-end: 6;
+  	// border: 3px solid purple;
+  	// border-radius: 10px;
+		// background-color: $color-7;
   }
   header h2{
   	grid-column: span 1/8;
-  	border: 3px solid purple;
-  	border-radius: 10px;
+  	// border: 3px solid purple;
+  	// border-radius: 10px;
+		// // background-color: $color-3;
+		// background-color: hsla(180,50%,50%,.3);
+		text-align: middle;
   }
   #zen-summary {
      grid-row-start: 3;
      grid-row-end: 2;
      grid-column-start: 2;
      grid-column-end: span 6;
-  	 border: 3px solid purple;
-  	 border-radius: 10px;
+  	 // border: 3px solid purple;
+  	 // border-radius: 10px;
   	 text-align: center;
   }
 }
@@ -43,8 +51,8 @@
   #zen-intro header {
    grid-column-start: 1;
    grid-column-end: span 8;
-   border: 3px solid purple;
-   border-radius: 10px;
+   // border: 3px solid purple;
+   // border-radius: 10px;
   }
   header h1{
   	height: 3em;
@@ -53,25 +61,30 @@
   	text-align: center;
   	display: flex;
   	flex-wrap: wrap;
-  	border: 3px solid purple;
-  	border-radius: 10px;
+  	border-radius: 40px;
+		// border: 3px solid purple;
+		background-color: $color-7;
   }
   header h2{
   	height: 3em;
-  	width: 30%;
+  	width: 60%;
   	margin: 0% 5% 5% 30%;
   	display: flex;
   	flex-wrap: wrap;
-  	border: 3px solid purple;
-  	border-radius: 10px;
-  }
+  	// border: 3px solid purple;
+  	border-radius: 15px;
+		background-color: $color-3;
+		background-color: hsla(180,50%,50%,.3);
+		text-align: center;
+		vertical-align: middle;
+	}
   #zen-summary {
      grid-row-start: 3;
      grid-row-end: 2;
-     grid-column-start: 2;
-     grid-column-end: span 6;
-  	 border: 3px solid purple;
-  	 border-radius: 10px;
+     grid-column-start: 4;
+     grid-column-end: span 4;
+  	 // border: 3px solid purple;
+  	 // border-radius: 10px;
   	 text-align: center;
   }
 }

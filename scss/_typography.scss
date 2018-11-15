@@ -36,6 +36,8 @@ h2 abbr{
  font-family: $secondary-font;
  color: $color-6;
  font-size: 3rem;
+ padding-left: .5em;
+ padding-right: .5em;
 }
 
 abbr{
@@ -70,9 +72,9 @@ div>p>a:hover{
 //preamble style
 
 .preamble{
-    color: $color-3;
+    color: $color-4;
     h3{
-        color: $color-3;
+        color: $color-4;
     }
 }
 
@@ -103,9 +105,9 @@ footer{
 
 //aside style
 aside{
-    color: $color-3;
+    color: $color-5;
     h3{
-        color: $color-3;
+        color: $color-5;
     }
     li{
     list-style: none;
@@ -114,15 +116,14 @@ aside{
 
 ul{
     a:link{
-        color: $color-3;
+        color: $color-5;
     }
     a:hover{
-        color: $color-4;
-        text-decoration: none;
-    }
-    a:visited{
         color: $color-6;
         text-decoration: none;
     }
+    a:visited{
+        color: $color-5;
+        text-decoration: none;
+    }
 }
-
