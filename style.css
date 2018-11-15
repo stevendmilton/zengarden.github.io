@@ -485,5 +485,7 @@ abbr {
 
   .design-selection, .design-archives, .zen-resources {
     padding-right: 30px; } }
+body {
+  background-image: url("/zengarden.github.io/icons/sun.svg"); }
 
 /*# sourceMappingURL=style.css.map */
