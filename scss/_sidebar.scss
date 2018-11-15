@@ -3,6 +3,7 @@
   grid-template-columns: repeat(8, auto);
   grid-template-rows: repeat(3, 1fr);
   height: 100%;
+  background-image: linear-gradient(to bottom, $color-6, $color-1);
 }
 
 .wrapper {
@@ -11,14 +12,16 @@
   grid-row: 1 / 4;
   grid-template-columns: repeat(3, auto);
   justify-content: space-evenly;
-  width: 100%;
+  width: 98.5%;
   height: 100%;
   margin: 0 auto;
-  // border: 3px solid blue;
-  // border-radius: 10px;
-  // margin: 5px;
-  background: linear-gradient(to bottom, $color-8 0%,$color-9 100%,);
+  margin: 5px;
 }
+
+.wrapper h3 {
+  color:  #135589;
+}
+
 
 .select, .archives, .resources {
   margin-left: 35px; }
@@ -26,11 +29,15 @@
 
 
 /* media query for mobile phone */
-@media only screen and (max-width: $M) {
+@media only screen and (max-width: 768px) {
   .sidebar, .wrapper {
-    // margin-right: 5px;
+    margin-right: 5px;
   }
 
+ .sidebar {
+    background: $color-1;
+  }
+  
 .wrapper {
     display: block;
     text-align: center; }
