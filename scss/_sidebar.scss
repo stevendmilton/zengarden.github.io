@@ -6,9 +6,9 @@
 }
 
 .wrapper {
+  display: grid;
   grid-column: 1 / 9;
   grid-row: 1 / 4;
-  display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: space-evenly;
   width: 100%;
