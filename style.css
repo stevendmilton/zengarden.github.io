@@ -420,7 +420,7 @@ abbr {
   grid-template-columns: repeat(8, auto);
   grid-template-rows: repeat(3, 1fr);
   height: 100%;
-  background-image: linear-gradient(to bottom, #ff6435, #edfafd); }
+  background-image: linear-gradient(to bottom, #B7B089, #5C5845); }
 
 .wrapper {
   display: grid;
