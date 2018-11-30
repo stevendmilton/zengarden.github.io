@@ -1,14 +1,18 @@
-h2 > abbr{
-    width: 300px;
-    height: 300px;
-    margin-top: -100px;
-    padding-top: 55px;
-    background-image: url("./icons/sun.svg");
-    z-index: 1000;
-    background-repeat: no-repeat;
-    
-}
 
+// this code is for adding the separate sun svg
+//h2 > abbr{
+//    width: 300px;
+//    height: 300px;
+//    margin-top: -100px;
+//    padding-top: 55px;
+//    background-image: url("./icons/sun.svg");
+//    z-index: 1000;
+//    background-repeat: no-repeat;
+//    
+//}
+h2 abbr{
+    color: transparent;
+}
 footer {
     a{
     width: 100px;
@@ -32,13 +36,131 @@ footer {
     background-position: cover;
 }
 
-header{
-    h2{
-        z-index: 1001;
-        line-height: 3;
-       padding-left: 30px;
-        font-size: 22px;
-       
-    }
+//header{
+//    h2{
+//        z-index: 1001;
+//        line-height: 3;
+//       padding-left: 30px;
+//        font-size: 22px;
+//       
+//    }
+//}
+.extra1{
+    width: 200px;
+    height: 200px;
+    background-image: url("./icons/fish-01.svg");
+    background-repeat: no-repeat;
+    margin-top: -700px;
+    margin-left: 400px;
+}
+.extra2{
+    width: 200px;
+    height: 200px;
+    background-image: url("./icons/boat.svg");
+    background-repeat: no-repeat;
+    margin-top: -1100px;
+    margin-left: 1200px;
+    
+}
+.extra3{
+    width: 300px;
+    height: 250px;
+    background-image: url("./icons/fish-02.svg");
+    background-repeat: no-repeat;
+    margin-top: 700px;
+    margin-left: 700px;
+}
+.extra4{
+    width: 800px;
+    height: 300px;
+    background-image: url("./icons/cloud.svg");
+    background-repeat: no-repeat;
+    margin-top: -1660px;
+    margin-left: -150px;
+    filter: drop-shadow(0 0 8px #C7C7C7);
+}
+.extra5{
+    width: 1300px;
+    height: 500px;
+    background-image: url("./icons/cloud-2.svg");
+    background-repeat: no-repeat;
 }
 
+////animation
+
+body:hover div.extra4{
+    transform: translateX(400px);
+    -webkit-transform: translatex(400px);
+    
+}
+.extra4{
+    transition: all 4s linear;
+    z-index: -1;
+}
+//header h1 {
+//    transition: all 4s linear;
+//margin-left: -150px;
+//}
+body:hover header h1{
+    transform: translateX(400px);
+    -webkit-transform: translatex(400px);
+    
+}
+.extra5{
+     transition: all 4s linear;
+     margin-left: 68vw;
+    margin-top: -40vh;
+}
+body:hover div.extra5{
+    transform: translateX(-450px);
+    -webkit-transform: translatex(-450px);
+    
+}
+//header h2{
+//     transition: all 4s linear;
+//     margin-left: 68vw;
+//    
+//}
+//body:hover header h2{
+//     transform: translateX(-450px);
+//    -webkit-transform: translatex(-450px);
+//}
+
+//
+//mobile View
+//
+@media screen and (max-width: $M) {
+    .extra5{
+     margin-left: 50vw;
+     margin-top: -10vh;
+     height: 250px;
+        transition: all 1s linear;
+}
+    body:hover div.extra5{
+    transform: translateX(-100px);
+    -webkit-transform: translatex(-100px);
+    
+}
+
+    //code for the white cloud and title
+    .extra4{
+    position: static;
+    margin-top: -460vw;
+    margin-left: -10vh;
+    transition: all 1s linear;
+        z-index: 100;
+}
+    body:hover div.extra4{
+    transform: translateX(100px);
+    -webkit-transform: translatex(100px);
+
+}
+//    header h1 {
+//        margin-left: -100px;
+//}
+//    body:hover header h1{
+//    transform: translateX(100px);
+//    -webkit-transform: translatex(100px);
+//    
+//}
+}

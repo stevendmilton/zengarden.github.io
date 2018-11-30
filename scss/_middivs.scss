@@ -271,4 +271,11 @@
     margin: 5px 0 0 ;
     background-color: $color-8;
   }
+    //transparent h1 and h2
+    h2 abbr{
+        color:transparent;
+    }
+    header h1{
+        color: transparent;
+    }
 }
