@@ -1,15 +1,4 @@
 
-// this code is for adding the separate sun svg
-//h2 > abbr{
-//    width: 300px;
-//    height: 300px;
-//    margin-top: -100px;
-//    padding-top: 55px;
-//    background-image: url("./icons/sun.svg");
-//    z-index: 1000;
-//    background-repeat: no-repeat;
-//    
-//}
 h2 abbr{
     color: transparent;
 }
@@ -28,6 +17,7 @@ footer {
     }
     
 }
+// KITE ICON
 .summary{
     width: 500px;
     height: 250px;
@@ -35,16 +25,7 @@ footer {
     background-repeat: no-repeat;
     background-position: cover;
 }
-
-//header{
-//    h2{
-//        z-index: 1001;
-//        line-height: 3;
-//       padding-left: 30px;
-//        font-size: 22px;
-//       
-//    }
-//}
+//FISH ICON
 .extra1{
     width: 200px;
     height: 200px;
@@ -53,6 +34,7 @@ footer {
     margin-top: -700px;
     margin-left: 400px;
 }
+//BOAT ICON
 .extra2{
     width: 200px;
     height: 200px;
@@ -62,6 +44,7 @@ footer {
     margin-left: 1200px;
     
 }
+//RED FISH ICON
 .extra3{
     width: 300px;
     height: 250px;
@@ -70,16 +53,18 @@ footer {
     margin-top: 700px;
     margin-left: 700px;
 }
-.extra4{
+//WHITE CLOUD ICON
+header h1{
     width: 800px;
     height: 300px;
     background-image: url("./icons/cloud.svg");
     background-repeat: no-repeat;
-    margin-top: -1660px;
-    margin-left: -150px;
+//    margin-top: -1660px;
+//    margin-left: -150px;
     filter: drop-shadow(0 0 8px #C7C7C7);
 }
-.extra5{
+//BLUE CLOUD ICON
+header h2{
     width: 1300px;
     height: 500px;
     background-image: url("./icons/cloud-2.svg");
@@ -87,80 +72,56 @@ footer {
 }
 
 ////animation
-
-body:hover div.extra4{
-    transform: translateX(400px);
-    -webkit-transform: translatex(400px);
-    
-}
-.extra4{
-    transition: all 4s linear;
-    z-index: -1;
-}
-//header h1 {
-//    transition: all 4s linear;
-//margin-left: -150px;
-//}
+// ANIMATION ON WHITE CLOUD
 body:hover header h1{
-    transform: translateX(400px);
-    -webkit-transform: translatex(400px);
+    transform: translateX(450px);
+    -webkit-transform: translatex(450px);
     
 }
-.extra5{
-     transition: all 4s linear;
-     margin-left: 68vw;
-    margin-top: -40vh;
+header h1{
+    transition: all 4s linear;
+    margin-left: -150px;
+    margin-top: -20px;
 }
-body:hover div.extra5{
-    transform: translateX(-450px);
-    -webkit-transform: translatex(-450px);
-    
-}
-//header h2{
-//     transition: all 4s linear;
-//     margin-left: 68vw;
-//    
-//}
-//body:hover header h2{
-//     transform: translateX(-450px);
-//    -webkit-transform: translatex(-450px);
-//}
 
-//
-//mobile View
-//
-@media screen and (max-width: $M) {
-    .extra5{
-     margin-left: 50vw;
-     margin-top: -10vh;
-     height: 250px;
-        transition: all 1s linear;
+// ANIMATION ON BLUE CLOUD
+header h2{
+     transition: all 4s linear;
+     margin-left: 850px;
+     margin-top: -250px;
 }
-    body:hover div.extra5{
+body:hover header h2{
+    transform: translateX(-350px);
+    -webkit-transform: translatex(-350px);
+    
+}
+
+//animation on small screen
+@media screen and (max-width: $M) {
+    //blue cloud
+    header h2{
+     margin-left: 50vw;
+        margin-top: -170px;
+     height: 300px;
+    transition: all 1s linear;
+    
+}
+    body:hover header h2{
     transform: translateX(-100px);
     -webkit-transform: translatex(-100px);
     
 }
-
-    //code for the white cloud and title
-    .extra4{
-    position: static;
-    margin-top: -460vw;
+    //white cloud
+    header h1{
     margin-left: -10vh;
     transition: all 1s linear;
-        z-index: 100;
+   
+      
 }
-    body:hover div.extra4{
+    body:hover header h1{
     transform: translateX(100px);
     -webkit-transform: translatex(100px);
 
 }
-//    header h1 {
-//        margin-left: -100px;
-//}
-//    body:hover header h1{
-//    transform: translateX(100px);
-//    -webkit-transform: translatex(100px);
-//    
-//}
+    
 }

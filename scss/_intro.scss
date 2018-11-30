@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat($maxcol, auto);
     grid-template-rows: repeat(5, auto);
-//    background-color: $color-1;
+    background-color: $color-1;
 }
 
 //
@@ -116,5 +116,6 @@
         align-content: center;
         justify-content: center;
         padding-top: 30px;
+    
     }
 }
