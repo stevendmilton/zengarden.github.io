@@ -157,7 +157,11 @@ footer a {
     padding-top: 300px; }
 
   .summary {
-    width: 300px; } }
+    width: 300px; }
+
+  .extra4 {
+    grid-column-start: 3;
+    grid-column-end: 6; } }
 @media screen and (min-width: 768px) {
   /* specific divs */
   #zen-intro header {
@@ -532,6 +536,20 @@ footer a:hover {
   background-repeat: no-repeat;
   background-position: cover; }
 
+.extra4 {
+  width: 500px;
+  height: 250px;
+  background-image: url("./icons/kite.svg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  animation: dash 4s ease-in-out infinite;
+  transform-origin: 60% bottom; }
+
+@keyframes dash {
+  25% {
+    transform: rotate(5deg); }
+  75% {
+    transform: rotate(-5deg); } }
 .extra1 {
   width: 200px;
   height: 200px;

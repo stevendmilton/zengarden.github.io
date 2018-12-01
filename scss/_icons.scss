@@ -20,6 +20,7 @@ footer {
         animation: 1s main 1;
     }
 }
+//shell animation
 @keyframes main {
   0% {
     transform: rotate(35deg);
@@ -46,6 +47,28 @@ footer {
     background-repeat: no-repeat;
     background-position: cover;
 }
+
+.extra4{
+     width: 500px;
+    height: 250px;
+    background-image: url("./icons/kite.svg");
+    background-repeat: no-repeat;
+    background-position: cover;
+     animation:dash 4s ease-in-out infinite; transform-origin: 60% bottom;
+    
+}
+@keyframes dash {
+25% {
+    transform:rotate(5deg);
+}
+ 
+75% {
+    transform:rotate(-5deg);
+}
+}
+
+
+
 //FISH ICON
 .extra1{
     width: 200px;
