@@ -15,8 +15,29 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    
+    a:hover{
+        transform-origin: 50% 50%;
+        animation: .4s main 1;
+    }
 }
+@keyframes main {
+  0% {
+    transform: rotate(35deg);
+  }
+  25% {
+    transform: rotate(-35deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 // KITE ICON
 .summary{
     width: 500px;
