@@ -9,7 +9,7 @@ footer {
     background-image: url("./icons/seashell.svg");
     background-repeat: no-repeat;
     }
-    
+
     a{
         display: flex;
         justify-content: center;
@@ -61,7 +61,7 @@ footer {
 25% {
     transform:rotate(5deg);
 }
- 
+
 75% {
     transform:rotate(-5deg);
 }
@@ -86,7 +86,7 @@ footer {
     background-repeat: no-repeat;
     margin-top: -1100px;
     margin-left: 1200px;
-    
+
 }
 //RED FISH ICON
 .extra3{
@@ -120,7 +120,7 @@ header h2{
 body:hover header h1{
     transform: translateX(450px);
     -webkit-transform: translatex(450px);
-    
+
 }
 header h1{
     transition: all 4s linear;
@@ -137,7 +137,7 @@ header h2{
 body:hover header h2{
     transform: translateX(-350px);
     -webkit-transform: translatex(-350px);
-    
+
 }
 
 //animation on small screen
@@ -148,24 +148,24 @@ body:hover header h2{
         margin-top: -170px;
      height: 300px;
     transition: all 1s linear;
-    
+
 }
     body:hover header h2{
     transform: translateX(-100px);
     -webkit-transform: translatex(-100px);
-    
+
 }
     //white cloud
     header h1{
     margin-left: -10vh;
     transition: all 1s linear;
-   
-      
+
+
 }
     body:hover header h1{
     transform: translateX(100px);
     -webkit-transform: translatex(100px);
 
 }
-    
+
 }
