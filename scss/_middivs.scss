@@ -27,33 +27,7 @@ $right-margin: 10px;
     width: 100%;
     color: $color-3;
     background-color: #135589;
-    position: relative;
-    display: block;
   }
-
-  #zen-preamble::before {
-      content: '';
-      display: block;
-      position: absolute;
-      border-radius: 100%;
-      width: 70%;
-      height: 100px;
-      background-color: #135589;
-      right: 50%;
-      top: -50px;
-    }
-
-    #zen-preamble::after {
-      content: '';
-      display: block;
-      position: absolute;
-      border-radius: 100%;
-      width: 50%;
-      height: 100px;
-      background-color: #edfafd;
-      left: 50%;
-      top: -53px;
-     }
 
   #zen-preamble h3 {
     text-align: left;

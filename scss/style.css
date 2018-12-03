@@ -216,31 +216,7 @@ footer a {
     margin: 0;
     width: 100%;
     color: #3ddad7;
-    background-color: #135589;
-    position: relative;
-    display: block; }
-
-  #zen-preamble::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100%;
-    width: 70%;
-    height: 100px;
-    background-color: #135589;
-    right: 50%;
-    top: -50px; }
-
-  #zen-preamble::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100%;
-    width: 50%;
-    height: 100px;
-    background-color: #edfafd;
-    left: 50%;
-    top: -53px; }
+    background-color: #135589; }
 
   #zen-preamble h3 {
     text-align: left;
