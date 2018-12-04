@@ -216,7 +216,20 @@ footer a {
     margin: 0;
     width: 100%;
     color: #3ddad7;
-    background-color: #135589; }
+    background-color: #135589;
+    position: relative; }
+
+  #zen-preamble::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    height: 8px;
+    width: 100%;
+    background-size: 20px 15px;
+    background-position: -5px -3px;
+    background-image: -webkit-radial-gradient(50% 0%, circle, #edfafd 50%, transparent 55%);
+    background-image: -moz-radial-gradient(50% 0%, circle, #edfafd 50%, transparent 55%);
+    background-image: radial-gradient(circle at 50% 0%, #edfafd 50%, transparent 55%); }
 
   #zen-preamble h3 {
     text-align: left;
