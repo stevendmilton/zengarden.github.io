@@ -27,7 +27,7 @@ $right-margin: 10px;
     width: 100%;
     color: $color-3;
     background-color: #135589;
-	position: relative;
+  position: relative;
   }
 
    #zen-preamble::before {
@@ -42,8 +42,8 @@ $right-margin: 10px;
     background-image: -moz-radial-gradient(50% 0%, circle, #edfafd 50%, transparent 55%);
     background-image: radial-gradient(circle at 50% 0%,  #edfafd 50%, transparent 55%);
   }
-  
-  
+
+
   #zen-preamble h3 {
     text-align: left;
     padding: 20px 10px 0px 18px;
@@ -112,6 +112,7 @@ $right-margin: 10px;
     // border: 3px solid green;
     border-radius: 30px;
     padding: 20px;
+    margin-top: 20px;
     margin-left: $left-margin;
     margin-right: $right-margin;
     background-color: hsla(180, 60%, 95%, .5);
