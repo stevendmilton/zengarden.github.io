@@ -554,8 +554,7 @@ footer a:hover {
   animation: moveKite 10s ease-in-out infinite;
   transform-origin: 60% bottom;
   position: absolute;
-  z-index: 1;
-  margin-top: -1500px; }
+  z-index: 1; }
 
 @keyframes moveKite {
   0% {
@@ -586,8 +585,7 @@ footer a:hover {
   background-image: url("./icons/boat.svg");
   background-repeat: no-repeat;
   margin-top: -1100px;
-  margin-left: 1200px;
-  position: absolute; }
+  margin-left: 1200px; }
 
 header h1 {
   width: 800px;
