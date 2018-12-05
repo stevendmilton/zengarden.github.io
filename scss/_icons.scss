@@ -54,20 +54,50 @@ footer {
     background-image: url("./icons/kite.svg");
     background-repeat: no-repeat;
     background-position: cover;
-     animation:dash 4s ease-in-out infinite; transform-origin: 60% bottom;
+    animation:moveKite 10s ease-in-out infinite; 
+    transform-origin: 60% bottom;
+    position: relative;
+    z-index: 1;
     
 }
-@keyframes dash {
-25% {
-    transform:rotate(5deg);
+@keyframes moveKite {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    
+    10%{
+        transform: translate(20px, -15px);
+    }
+    20% {
+        transform: translate(5px, -10px);
+    }
+   30%{
+     transform: translate(80px, -80px);
+   }
+   40% {
+        transform: translate(5px, -10px);
+    }
+   50% {
+        transform: translate(-95px, -40px);
+    }
+   60%{
+     transform: translate(-20px, -5px);
+   }
+   70%{
+     transform: translate(10px, 15px);
+   }
+   80%{
+     transform: translate(10px, 15px);
+   }
+   90%{
+     transform: translate(10px, 15px);
+   }
+    100% {
+        transform: translate(0px, 0px);
+        
+    }
+ 
 }
-
-75% {
-    transform:rotate(-5deg);
-}
-}
-
-
 
 //FISH ICON
 .extra1{
