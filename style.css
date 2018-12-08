@@ -147,7 +147,7 @@ footer a {
   #zen-summary {
     grid-row-start: 3;
     grid-row-end: 2;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: span 6;
     text-align: center;
     display: flex;
@@ -330,20 +330,18 @@ footer a {
     -webkit-transform-origin: 100% 0;
     transform-origin: 100% 0; } }
 @media screen and (max-width: 768px) {
-  .main {
-    background: linear-gradient(to bottom, #135589 0%, #3ddad7 100%); }
-
   #zen-preamble {
     grid-row: 3;
     grid-column: 1 / span 8;
     margin: auto;
     width: 100%;
     padding: 20px 10px 0px 10px;
-    background-color: #135589; }
+    background-color: #135589;
+    color: #aed9da; }
 
   #zen-preamble h3 {
     text-align: center;
-    color: #2a93d5;
+    color: #B7B089;
     margin: 20px 15% 0% 15%; }
 
   .preamble p:nth-child(2) {
@@ -364,11 +362,11 @@ footer a {
     margin: auto;
     width: 100%;
     padding: 5em, auto 5em auto;
-    background-color: rgba(255, 255, 255, 0.2); }
+    color: #aed9da; }
 
   .explanation h3 {
     text-align: center;
-    color: #aed9da;
+    color: #B7B089;
     margin: 20px 15% 0% 15%; }
 
   .explanation p:nth-child(2) {
@@ -376,7 +374,6 @@ footer a {
     margin: 0% 5% 0% 5%; }
 
   .explanation p:nth-child(3) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
@@ -386,27 +383,22 @@ footer a {
     margin: auto;
     width: 100%;
     padding: 20px 10px 0px 10px;
-    background-color: rgba(235, 250, 250, 0.5); }
+    color: #aed9da; }
 
   .participation h3 {
     text-align: center;
-    background-color: #135589;
-    color: #edfafd;
-    margin: 20px 15% 0% 15%;
-    background-color: rgba(235, 250, 250, 0.5); }
+    color: #B7B089;
+    margin: 20px 15% 0% 15%; }
 
   .participation p:nth-child(2) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
   .participation p:nth-child(3) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
   .participation p:nth-child(4) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
@@ -415,36 +407,31 @@ footer a {
     grid-column: 1 / span 8;
     margin: auto;
     width: 100%;
-    padding: 20px 10px 0px 10px; }
+    padding: 20px 10px 0px 10px;
+    color: #edfafd; }
 
   .requirements h3 {
     text-align: center;
-    background-color: #135589;
-    color: #edfafd;
+    color: #B7B089;
     margin: 20px 15% 0% 15%; }
 
   .requirements p:nth-child(2) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
   .requirements p:nth-child(3) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
   .requirements p:nth-child(4) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
   .requirements p:nth-child(5) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
   .requirements p:nth-child(6) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
@@ -453,16 +440,15 @@ footer a {
     grid-column: 1 / span 8;
     margin: auto;
     width: 100%;
-    padding: 20px 10px 20px 10px; }
+    padding: 20px 10px 20px 10px;
+    color: #edfafd; }
 
   .benefits h3 {
     text-align: center;
-    background-color: #135589;
-    color: #edfafd;
+    color: #B7B089;
     margin: 20px 15% 0% 15%; }
 
   .benefits p:nth-child(2) {
-    background-color: #2a93d5;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%; }
 
@@ -486,7 +472,7 @@ footer a {
   grid-template-columns: repeat(8, auto);
   grid-template-rows: repeat(4, 1fr);
   height: 100%;
-  background-image: linear-gradient(to bottom, #B7B089, #5C5845); }
+  background-image: linear-gradient(to bottom, #B7B089, #ffffff); }
 
 .wrapper {
   display: grid;
@@ -508,9 +494,6 @@ footer a {
 @media only screen and (max-width: 768px) {
   .sidebar, .wrapper {
     margin-right: 5px; }
-
-  .sidebar {
-    background: #edfafd; }
 
   .wrapper {
     display: block;

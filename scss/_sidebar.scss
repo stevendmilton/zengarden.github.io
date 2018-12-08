@@ -3,7 +3,7 @@
   grid-template-columns: repeat(8, auto);
   grid-template-rows: repeat(4, 1fr);
   height: 100%;
-  background-image: linear-gradient(to bottom, $color-8, $color-9);
+  background-image: linear-gradient(to bottom, $color-8, $color-7);
 }
 
 .wrapper {
@@ -28,10 +28,6 @@
 @media only screen and (max-width: 768px) {
   .sidebar, .wrapper {
     margin-right: 5px;
-  }
-
- .sidebar {
-    background: $color-1;
   }
 
 .wrapper {

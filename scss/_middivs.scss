@@ -160,9 +160,6 @@ $right-margin: 10px;
 //mobile View
 //
 @media screen and (max-width: $M) {
-  .main {
-    background: linear-gradient(to bottom, $color-5 0%,$color-3 100%,);
-  }
 
   #zen-preamble {
     grid-row: 3;
@@ -171,11 +168,12 @@ $right-margin: 10px;
     width: 100%;
     padding: 20px 10px 0px 10px;
     background-color: $color-5;
+    color: $color-2;
   }
   #zen-preamble h3 {
     text-align: center;
     // background-color: $color-5;
-    color: $color-4;
+    color: $color-8;
     margin: 20px 15% 0% 15%;
   }
   .preamble p:nth-child(2) {
@@ -199,23 +197,27 @@ $right-margin: 10px;
     margin: auto;
     width: 100%;
     padding: 5em, auto 5em auto;
-    background-color: hsla(180, 40%, 100%, .2);
+    // background-color: hsla(180, 40%, 100%, .2);
+    color: $color-2;
   }
   .explanation h3 {
     text-align: center;
     // background-color: $color-5;
-    color: $color-2;
+    color: $color-8;
     margin: 20px 15% 0% 15%;
   }
   .explanation p:nth-child(2) {
     // background-color: $color-;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
+
+
   }
   .explanation p:nth-child(3) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
+
   }
   #zen-participation {
     grid-row: 5;
@@ -223,27 +225,28 @@ $right-margin: 10px;
     margin: auto;
     width: 100%;
     padding: 20px 10px 0px 10px;
-    background-color: hsla(180, 60%, 95%, .5);
+    // background-color: hsla(180, 60%, 95%, .5);
+    color: $color-2;
   }
   .participation h3 {
     text-align: center;
-    background-color: $color-5;
-    color: $color-1;
+    // background-color: $color-5;
+    color: $color-8;
     margin: 20px 15% 0% 15%;
-    background-color: hsla(180, 60%, 95%, .5);
+    // background-color: hsla(180, 60%, 95%, .5);
   }
   .participation p:nth-child(2) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
   .participation p:nth-child(3) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
   .participation p:nth-child(4) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
@@ -253,35 +256,36 @@ $right-margin: 10px;
     margin: auto;
     width: 100%;
     padding: 20px 10px 0px 10px;
+    color: $color-1;
   }
   .requirements h3 {
     text-align: center;
-    background-color: $color-5;
-    color: $color-1;
+    // background-color: $color-5;
+    color: $color-8;
     margin: 20px 15% 0% 15%;
   }
   .requirements p:nth-child(2) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
   .requirements p:nth-child(3) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
   .requirements p:nth-child(4) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
   .requirements p:nth-child(5) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
   .requirements p:nth-child(6) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
@@ -291,15 +295,16 @@ $right-margin: 10px;
     margin: auto;
     width: 100%;
     padding: 20px 10px 20px 10px;
+    color: $color-1;
   }
   .benefits h3 {
     text-align: center;
-    background-color: $color-5;
-    color: $color-1;
+    // background-color: $color-5;
+    color: $color-8;
     margin: 20px 15% 0% 15%;
   }
   .benefits p:nth-child(2) {
-    background-color: $color-4;
+    // background-color: $color-4;
     padding: 5px 20px 5px 20px;
     margin: 0% 5% 0% 5%;
   }
